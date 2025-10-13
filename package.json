@@ -1,0 +1,49 @@
+{
+  "name": "dd2977-autofill",
+  "version": "1.0.0",
+  "description": "Intelligent PDF form autofill tool for DD2977 hazard assessment forms",
+  "main": "dist/src/pdf/da2977.js",
+  "types": "dist/src/pdf/da2977.d.ts",
+  "type": "module",
+  "license": "MIT",
+  "author": "clueless187-8",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clueless187-8/DD2977-Autofill.git"
+  },
+  "keywords": [
+    "pdf",
+    "form-filling",
+    "dd2977",
+    "hazard-assessment",
+    "automation",
+    "typescript",
+    "pdf-lib"
+  ],
+  "homepage": "https://github.com/clueless187-8/DD2977-Autofill#readme",
+  "bugs": {
+    "url": "https://github.com/clueless187-8/DD2977-Autofill/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "integrate": "node dist/scripts/integrate.js",
+    "auto-map": "node scripts/auto-map-and-apply.js",
+    "extract-fonts": "node scripts/extract-fonts.js",
+    "analyze-fonts": "node scripts/analyze-font-usage.js"
+  },
+  "dependencies": {
+    "zod": "^4.0.0",
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
+
